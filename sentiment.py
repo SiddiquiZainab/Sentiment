@@ -25,6 +25,7 @@ elif sentiment_score['compound'] <= -0.1:
 else:
     sentiment = 'Neutral'
 
-# Display the input text
-st.write("You entered:", user_input)
-st.write("The sentiment of the text is:", sentiment)
+if st.button("Analyze Text"):
+  # Display the input text
+  st.write("You entered:", user_input)
+  st.write("The sentiment of the text is:", sentiment)
